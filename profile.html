@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link href="general.css" rel="stylesheet">
+    <link href="profile.css" rel="stylesheet">
+    <script defer src="toolbar.js"></script>
+    <script defer src="profile.js"></script>
+</head>
+
+<body class="flex j-center d-column">
+<div class="top">
+</div>
+<div class="toolbar">
+    <div class="cont">
+        <div class="nav-links">
+            <a href="./index.html">Home</a>
+            <a href="./gallery.html">Gallery</a>
+            <a href="./chat.html">Chat</a>
+            <a class="selected">User Profile</a>
+        </div>
+        <a href="./index.html">
+            <div class="logout-btn">Logout</div>
+        </a>
+    </div>
+</div>
+<div class="container flex j-center ">
+    <div class="register-form">
+        <div class="form-group">
+            <img alt="" class="user_image"
+                 src="">
+            <label>Change profile image</label>
+            <input id="user_img" placeholder="Enter image url" required type="text">
+
+            <div class="errorMessageImg"></div>
+            <button class="submit-btn img" type="submit">Save</button>
+        </div>
+        <div class="form-group">
+            <h1>email</h1>
+            <label for="old_password">Change user password</label>
+            <input id="old_password" placeholder="Enter old password" required type="text">
+            <label>New password</label>
+            <input id="new_password_1" placeholder="Enter new password" required type="text">
+            <input id="new_password_2" placeholder="Repeat new password" required type="text">
+            <div class="errorMessagePsw"></div>
+            <button class="submit-btn psw" type="submit">Save</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

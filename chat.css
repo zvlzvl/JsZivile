@@ -1,0 +1,94 @@
+
+.register-form {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px 20px 10px 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    height: 70vh;
+    overflow-y: scroll;
+
+}
+
+
+.text-enter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    background-color: white;
+    margin: 0 20px 20px 20px;
+    padding: 0 20px;
+    border-radius: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px 10px;
+    outline: none;
+    font-size: 20px;
+    border: none;
+    color: #1d2302;
+    overflow: hidden;
+}
+
+
+.icon-send {
+    cursor: pointer;
+}
+
+.user {
+    max-width: 80%;
+    display: inline-block;
+    border-radius: 8px;
+    background-color: #6b8e23;
+    padding: 1rem;
+    color: white;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.user_time {
+    display: inline-block;
+    font-size: 16px;
+    color: grey;
+}
+
+.answer_time {
+    display: inline-block;
+    font-size: 16px;
+    color: grey;
+}
+
+.answer {
+    max-width: 80%;
+    display: inline-block;
+    border-radius: 8px;
+    background-color: #bfcbb0;
+    padding: 1rem;
+    color: #333333;
+    margin-bottom: 5px;
+    border: #c6c2c2 1px solid;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .register-form {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 450px) {
+    .register-form {
+        flex-direction: column;
+    }
+
+    .register-form input {
+        max-width: 100%;
+    }
+
+}

@@ -1,0 +1,104 @@
+/*register*/
+.register-form {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px 20px 0 20px;
+    gap: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.register-form .form-group {
+    display: flex;
+    margin-bottom: 15px;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.register-form label {
+    display: block;
+    font-size: 14px;
+    color: #333D14;
+    margin: 5px 0;
+}
+
+.register-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    margin: 5px 0;
+    max-width: 70%;
+}
+
+.register-form input:focus {
+    border-color: #333D14;
+    outline: none;
+}
+
+.register-form .submit-btn {
+    background: linear-gradient(135deg, #333D14, #6B8E23);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+    max-width: 70%;
+    width: 100%;
+}
+
+.register-form .submit-btn:hover {
+    background: linear-gradient(135deg, #6B8E23, #333D14);
+}
+
+.errorMessage {
+    color: red;
+}
+
+.user_image {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #333D14;
+}
+
+#user_img {
+    width: 100%;
+    margin: 10px 0;
+}
+
+h1 {
+    background: linear-gradient(135deg, #6B8E23, #333D14);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .register-form {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 450px) {
+    .register-form {
+        flex-direction: column;
+    }
+
+    .register-form input {
+        max-width: 100%;
+    }
+
+    .register-form .submit-btn {
+        max-width: 100%;
+    }
+}
